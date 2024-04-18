@@ -13,9 +13,58 @@
     color: var(--main-color);
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none; 
+}
+
+nav a:hover {
+    color:#0065FC;
+    text-decoration:overline; /*ne pas oublier qu'en mobile il sera en bas et marge avec le a à redef*/
+}
+
+nav a {
+    margin-left: 60px;
+  }
+
 body {
     display: flex;
     justify-content: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px; 
+}
+
+form i {
+    margin: 0 10px; 
+}
+
+form input[type="text"] {
+    border: none;
+    padding: 10px;
+    margin-right: 10px; 
+    border-radius: 20px; 
+}
+
+form button {
+    padding: 10px 20px; 
+    border: none;
+    background-color: #007bff;
+    color: white; 
+    border-radius: 20px; 
 }
 
 .main-container {
@@ -23,11 +72,6 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .section-title {
@@ -50,6 +94,29 @@ a {
     font-size: 16px;
 }
 
+.activite {
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+
+
 .euro {
     font-weight: 700;
 }
@@ -62,6 +129,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .hebergements-and-populaires section {
