@@ -71,6 +71,37 @@ form button {
     font-weight: 700;
 }
 
+.box1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+}
+
+.box-filtre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px #DEEBFF;
+    border-radius: 30px;   
+    padding: 10px 20px; 
+    margin-left: 10px;
+}
+
+.filtre i {
+    margin-right: 10px;
+}
+
+.box-filtre:hover {
+    background-color: #DEEBFF ;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
