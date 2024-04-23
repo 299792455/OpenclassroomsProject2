@@ -15,25 +15,33 @@
 
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    background-color: white;
+    align-items:center;
+    height: 60px;
 }
 
 a {
     color: inherit;
-    text-decoration: none; 
+    text-decoration: none;; 
 }
 
-nav a:hover {
-    color:#0065FC;
-    text-decoration:overline; /*ne pas oublier qu'en mobile il sera en bas et marge avec le a à redef*/
+a:hover {
+    color:var(--main-color);
 }
 
 nav a {
-    margin-left: 60px;
-  }
+    display: inline-block;
+    padding-left: 60px;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     display: flex;
@@ -44,30 +52,39 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 20px;
 }
 
 form i {
-    padding: 10px;
-    border-radius: 10px 0px 0px 10px;
+    border: none;
+    padding: 20px;
+    border-radius: 18px 0px 0px 18px;
     color: black !important; 
     background-color: #F2F2F2;
 }
 
 form input[type="text"] {
     border: none;
-    padding: 10px; 
+    padding: 20px; 
     font-weight: 700;
     text-align: center;
     box-shadow: inset 1px 0 0 1px #F2F2F2;
+    font-size: 13px;
+
 }
 
 form button {
-    padding: 10px; 
+    padding: 20px;
     border: none;
     background-color: #0065FC;
     color: white; 
-    border-radius: 0px 10px 10px 0px; 
+    border-radius: 0px 18px 18px 0px; 
     font-weight: 700;
+    font-size: 13px;
+}
+
+.filtre {
+    margin-top: 40px;
 }
 
 .box1 {
@@ -78,13 +95,10 @@ form button {
 }
 
 .box-filtre {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     border: solid 1px #DEEBFF;
     border-radius: 30px;   
-    padding: 10px 20px; 
-    margin-left: 10px;
+    padding: 12px 20px; 
+    margin-left: 20px;
 }
 
 .filtre i {
@@ -95,10 +109,19 @@ form button {
     background-color: #DEEBFF ;
 }
 
+.box-filtre i {
+    color:var(--main-color);
+}
+
 .box2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 30px;
+}
+
+.box2 i {
+    color: var(--main-color);
 }
 
 .main-container {
@@ -134,19 +157,24 @@ form button {
 
 footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items:center;
     background-color: #F2F2F2;
-    margin-top: 20px;
     padding: 20px;
+    margin-top: 40px;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items:flex-start;
+    width: 30%;
+}
+
+.footer-link {
+    margin-top: 10px;
+}
+
+.footer h4 {
+    margin: 0;
 }
 
 
@@ -178,24 +206,45 @@ footer {
     width: 65%;
 }
 
+.hebergement-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hebergement-cards {
     display:grid;
     margin-top: 33px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 25px;
     justify-content: center;
     align-items: start;
-    
+}
+
+.hebergement-cards h3 {
+    margin: 10px 0px 0px 10px;
+}
+
+.hebergement-cards p {
+    margin: 10px 0px 0px 10px;
+}
+
+.hebergement-cards .card-rating {
+    margin: 10px 0px 10px 10px;
 }
 
 .hebergement-cards img {
     width: 100%;
-    height: 100px;
+    height: 115px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 /******Activités ***********/
+
+.activite {
+    margin-top: 30px;
+}
 
 .activite-cards {
     display:grid;
@@ -209,7 +258,7 @@ footer {
 
 .activite-cards img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -219,6 +268,9 @@ footer {
     width: 32%;
 }
 
+.activite h3{
+    padding-left: 20px;
+}
 .populaires-title {
     display: flex;
     justify-content: space-between;
