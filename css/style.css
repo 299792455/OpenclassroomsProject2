@@ -242,6 +242,7 @@ footer {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    height: 650px;
 }
 
 .hebergement-title {
@@ -441,14 +442,14 @@ footer {
     }
 
     .hebergement-cards .card-title {
-        font-size: 14px;
+        font-size: 1em;
     }
 
     .hebergement-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 0.9em;
     }
 
-/**Hebergement populaire**/
+/**Populaire Tablette**/
 
     .populaires {
         width: 100%;
@@ -466,11 +467,11 @@ footer {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 1em;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 0.9em;
     }
 }
 
@@ -502,6 +503,10 @@ footer {
     width: 100%;
     height: 50px;
     align-items: center;
+}
+
+.activite-cards h3 {
+    font-size: 0.9em;
 }
 
 /**Footer tablette**/
