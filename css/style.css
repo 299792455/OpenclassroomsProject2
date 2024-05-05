@@ -255,7 +255,7 @@ form button {
 /****** Hebergements ***********/
 .hebergements {
     width: 68%;
-    height: 630px;
+    height: 610px;
     
 }
 
@@ -306,6 +306,7 @@ form button {
 
 .afficher-plus {
     margin-top: 10px;
+    font-size: 16px;
 }
 
 .afficher-plus :hover {
@@ -445,19 +446,19 @@ footer {
 .filtre-global {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 100%;
 }
 
 .box-filtre {
     display: flex;
     margin-left: 0px;
     margin-right: 20px;
+    font-size: 85%;
 }
 
 .box-filtre a {
     display: flex;
     flex-direction: row;
-    font-size: 14px;
 }
 
 .box-filtre i {
@@ -466,6 +467,10 @@ footer {
 
 .button-mobile {
     display: none;
+}
+
+.filtre-subtitle {
+    font-size: 100%;
 }
 
 /**Hebergement tablette**/
@@ -505,11 +510,11 @@ footer {
     }
 
     .hebergement-cards .card-title {
-        font-size: 1em;
+        font-size: 100%;
     }
 
     .hebergement-cards .card-subtitle {
-        font-size: 0.9em;
+        font-size: 90%;
     }
 
 /**Populaire Tablette**/
@@ -525,23 +530,28 @@ footer {
         justify-content: space-between;
     }
 
+    .populaires-cards .card {
+        margin-top: 20px;
+    }
+
     .populaires-cards a {
         width: 32%;
     }
 
     .populaires-cards .card-title {
-        font-size: 1em;
+        font-size: 100%;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 0.9em;
+        font-size: 90%;
     }
-}
 
-/**Activite Tablette**/
+    /**Activite Tablette**/
 
-.activite-cards img {
-    height: 175px;
+    .activite-cards img {
+    height: 200px;
+    }
+    
 }
 
 
@@ -549,9 +559,11 @@ footer {
 
 @media (min-width: 1025px) {
     .activite-cards img {
-        height: 350px; /* Réaffirmer la hauteur pour les grands écrans */
+        height: 350px; 
     }
 }
+
+/* Solution provisoire car la version desktop conservait la height de la version tablette */
 
 /************EXCEPTION SIZING************/
 
@@ -570,7 +582,7 @@ footer {
     .hebergements-and-populaires section {
         background-color: var(--main-bg-color);
         border-radius: 0;
-        padding: 30px;
+        padding: 20px;
         box-sizing: border-box;
     }
 
@@ -641,11 +653,16 @@ footer {
 .main-title {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
+    margin-top: 10px;
 }
 
 .section-title {
-    font-size: 1.3em;
+    font-size: 130%;
+}
+
+.titre-subtitle {
+    font-size:98%;
 }
 
 .card-subtitle {
@@ -678,29 +695,30 @@ footer {
 
 form {
     width: 100%;
-    padding:30px;
+    padding:20px;
     box-sizing: border-box;
     margin: 0;
     padding-top: 0;
 }
 
 form input {
-    width: 100%;
+    width: 120%;
 }
 
 form input[type="text"] {
     font-size: 17px;
     text-align: left;
+    padding-left: 15px;
 }
 
 ::placeholder {
-    text-align: center;
+    text-align: left;
 }
 
 /**Filtre Mobile**/
 
 .filtre {
-    padding:30px;
+    padding:20px;
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -713,7 +731,7 @@ form input[type="text"] {
 }
 
 .filtre-global p {
-    font-size: 1.2em;
+    font-size: 110%;
     margin:0;
     margin-bottom: 10px;
 }
@@ -736,7 +754,7 @@ form input[type="text"] {
 }
 
 .box-filtre a {
-    font-size: 1em;
+    font-size: 85%;
 }
 
 .filtre i {
@@ -764,6 +782,11 @@ form input[type="text"] {
     color: var(--main-color);
 }
 
+.filtre-subtitle {
+    font-size: 110%;
+}
+
+
 /**Populaires Mobile**/
 
 .populaires {
@@ -772,7 +795,7 @@ form input[type="text"] {
 }
 
 .populaires .section-title {
-    font-size: 1.2em;
+    font-size: 140%;
 }
 
 .populaires-cards {
@@ -838,7 +861,6 @@ form input[type="text"] {
 }
 
 .hebergement-title h2 {
-    font-size: 1.3em;
     padding-left: 0;
 }
 
@@ -873,13 +895,13 @@ form input[type="text"] {
 .hebergement-cards .card-title {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 1em;
+    font-size: 100%;
 }
 
 .hebergement-cards .card-subtitle {
     margin: 0;
     padding: 0;
-    font-size: 0.9em;
+    font-size: 90%;
 }
 
 .hebergement-cards .card-rating {
@@ -887,10 +909,15 @@ form input[type="text"] {
     margin-bottom: 5px;
 }
 
+.afficher-plus {
+    font-size: 110%;
+    margin-top: 0;
+}
+
 /**activite Mobile**/
 
 .activite {
-    margin-top: 30px;
+    margin-top: 40px;
     box-sizing: border-box;
     padding: 30px;
 }
@@ -919,6 +946,10 @@ form input[type="text"] {
     display: flex;
     width: 100%;
     align-items: center;
+}
+
+.activite-cards .card-title {
+    font-size: 100%;
 }
 
 /**Footer Mobile**/
